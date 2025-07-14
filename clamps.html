@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLAMPS Home</title>
+  <link rel="stylesheet" href="clamps.css">
+  <script src="clamps.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2 class="logo" style="color: red;">Clamps <img src="img_avatar2.png" alt="Avatar" class="avatar"></h2>
+    <nav class="navigation">
+      <!-- tabs -->
+     
+      <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+      <button class="tablinks" onclick="openTab(event, 'Features')">Features</button>
+      <button class="tablinks" onclick="openTab(event, 'Contact Us')">Contact Us</button>
+      <button class="tablinks" onclick="darkMode()">Dark Mode</button>
+      <button class="tablinks" onclick="lightMode()">Light Mode</button>
+
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+      <h1 class="login">Home</h1>
+      <p>Welcome to CLAMPS! <br><br> Users can create, edit, and store passwords after authenticating. Passwords can only be viewed after authentication. After authenticating, users can store more passwords, or edit any password entries.</p>
+      <br>
+      <!-- User Auth -->
+      <div class="form-box login">
+        <h2>User Authentication</h2>
+        <a href="login.html">Login</a> <br><br>
+        <a href="register.html">Register</a>
+      </div>
+      <br><br>
+      <!-- Entry -->
+      <div class="form-box login">
+        <h2>New Entry</h2>
+        <p>Make sure to login to save all new entries and access the password of previous entries.</p>
+        <a href="new_entry.html">Click here to make a new entry!</a>
+      </div>
+      <br><br>
+      <!-- Search -->
+      <div class="form-box login">
+        <h2>Password Search</h2>
+        <input type="text" id="myInput" onkeyup="search()" placeholder="Search for password name...">
+        <ul id="myUL">
+          <li><a href="password1.html">ESPN Password</a></li><br>
+          <li><a href="password2.html">Netflix Password</a></li><br>
+          <li><a href="password3.html">Facebook Password</a></li><br>
+        </ul>
+      </div>
+      <br><br>
+      <!-- Catalog -->
+      <div class="form-box login">
+        <h2>Password Catalog</h2>
+        <p>List of the password names that you have. Click the password name to reveal the password.</p>
+        <li><a href="password1.html"><i>ESPN</i></a></li><br>
+        <li><a href="password2.html"><i>Netflix</i></a></li><br>
+        <li><a href="password3.html"><i>Facebook</i></a></li><br>
+      </div>
+      <br><br><br><br><br><br><br><br>
+      </div>
+
+    <!-- Features -->
+    <div id="Features" class="tabcontent">
+      <h2>Features</h2>
+      <ol>
+        <li>User Authentication: Users must enter their password correctly to create and edit new entries.</li>
+                <br><li>Account Restricting: Only one account is allowed per email.</li>
+                <br><li>Theme: The website has a consistent black, white, red theme to represent security and to keep simplicity.</li>
+                <br><li>Entry Editing: Users are able to edit their entries.</li>
+                <br><li>Button Navigation: Users are able to navigate the website and its pages through the use of 'Homepage buttons' at every page.</li>
+                <br><li>Light/Dark Mode: Users are able to view the website in a dark or light theme.</li>
+                <br><li>Search: Users are able to search for their entries based on name.</li>
+                <br><li>Confirmation: Users will be prompted a confirmation dialog when an entry has been successfully saved.</li>
+                <br><li>Tab Navigation: Users can navigate the website through the use of tabs at the top of the page.</li>
+                <br><li>Password Strengthener: Users are required to have a certain password criteria when creating entry passwords.</li>
+                <br><li>Security Q&A: Users must provide a security question and answer when authenticating themselves.</li>
+            </ol>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact Us" class="tabcontent">
+      <h2>About Us</h2>
+      <p>Two first year Computer Science students at York University who are creating a local password manager using HTML, CSS, JS, and Node.js.</p>
+      <p>This project belongs to both of these students and will be submitted as the Project for EECS 1012 Section N01.</p>
+
+      <h2>Contact Us</h2>
+      <p>Team Members:<br><br>
+        Gokulan Nanthakumar - gnskl10@my.yorku.ca<br><br>
+        Soran Sabir - sorans@my.yorku.ca
+      </p>
+    </div>
+  </div>
+
+   <!-- Ionicons -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+   <!-- Automatically open Home tab -->
+   <script>
+     window.onload = function () {
+       document.getElementById("defaultOpen").click();
+     };
+   </script>
+ </body>
+ </html>
+ 

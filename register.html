@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clamps Register</title>
+    <link rel="stylesheet" href="reglogin.css">
+</head>
+<script src="clamps.js"></script>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <label for="passwordHint">Password Hint (Optional):</label>
+            <input type="text" id="passwordHint">
+
+            <label for="securityQuestion">Security Question:</label>
+            <input type="text" id="securityQuestion" required>
+
+            <label for="securityAnswer">Security Answer:</label>
+            <input type="password" id="securityAnswer" required>
+
+            <button type="button" onclick="registerUser()">Register</button>
+            <input type="hidden" id="fileName" value="user_details.txt">
+        </form>
+    </div>
+
+    <script src="authen.js"></script>
+</body>
+
+</html>
